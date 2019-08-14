@@ -1,0 +1,44 @@
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.PriorityQueue;
+//package heros;
+
+
+public class Heros {
+
+    
+    public static void main(String[] args) {
+        Queue hero; 
+        hero = new LinkedList();
+            hero.add("Avian");
+            System.out.println("Añadiendo un heroe nuevo "+hero);
+            hero.offer("Clayman");
+            System.out.println("Añadiendo a otro hero pero con el metodo offer :"+hero);
+            hero.remove("Clayman");
+            System.out.println("Retirando al ultimo heroe agregado :"+hero);
+            hero.add("Neos");
+            hero.add("Aquos");
+            hero.poll();
+            System.out.println("Identificando la cabeza de la cola y la remueve :"+hero.poll());
+            hero.element();
+            System.out.println("Identificando la cola de la Queue para evitar la redundancia :"+hero.element());
+            hero.add("Burs");
+            hero.peek();
+            System.out.println("Identifica al ultimo dato pero evitando restricciones :"+hero.peek());
+            hero.size() ;
+            System.out.println("Identifica el tamaño o cantidad de elementos que componen a la cola :"+hero.size());
+            hero.isEmpty();
+            System.out.println("Identifica si la cola esta vacia y retorna un dato booleano :"+hero.isEmpty());
+            hero.contains(hero);
+            System.out.println("Identifica si existe un objeto especifico de la cola y retorna un valos booleano :"+hero.contains("Aquos"));
+            hero.add("Neos");
+            hero.add("Clayman");
+//            hero.iterator();
+//            System.out.println(""+hero.iterator()+hero);
+            hero.clear();
+            System.out.println("Se limpia todos los objeros de la cola :"+hero);
+            
+        
+    }
+    
+}
